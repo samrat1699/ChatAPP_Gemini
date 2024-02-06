@@ -1,6 +1,4 @@
-To create a README.md file based on the provided Streamlit app code, you can summarize the functionality and usage of the app. Here's a basic template you can use:
 
----
 
 # Chat App with Google Gemini
 
