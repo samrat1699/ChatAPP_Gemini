@@ -54,6 +54,7 @@ if prompt := st.chat_input("What can I do for you?"):
         response = current_chat.send_message(prompt)
         with st.chat_message("assistant"):
             st.markdown(response.text)
-    except geai.generation_types.StopCandidateException as stop_exception:
-        st.error("Error: The generative model encountered an issue. Please try again.")
+    except Exception as e:
+        st.error(f"Error: {e}")
+
 st.empty()                
